@@ -246,28 +246,13 @@ footer{
 	background-clip: text;
 		-webkit-text-fill-color: transparent;
 }
-.images{
-	display: flex;
-	flex-wrap: wrap;
-}
-.images img{
-	object-fit: cover;
-	width: 25%;
-}
-.embedded{
-	text-align: center;
-}
-.embedded iframe{
-	height:700px;
-	width:1000px;
-}
+
 /******/
 .row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 0px;/*4px*/
   overflow: hidden;
-  z-index: 99;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -283,13 +268,12 @@ footer{
   vertical-align: middle;
   width: 100%;
   -webkit-filter: brightness(70%);
-  transition: all 1s;
+  transition: all .5s;
 }
 
 .column img:hover{
 	transform:scale(1.1);
    -webkit-filter: brightness(100%);
-    z-index: -1;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -309,4 +293,25 @@ footer{
 }
 .img-parent{
 	overflow: hidden;
+}
+#projects{
+	transform-origin: top right;
+	background: #fff;
+	background-position: center;
+	background-size: 100%;
+}
+.embedded{
+	text-align: center;
+	position: relative;
+	margin-top: -300px;
+	background: #fff;
+	z-index: 99;
+}
+.embedded iframe{
+	height:600px;
+	width:1000px;
+}
+.embedded h1{
+	font-size: 70px;
+	color: #224252;
 }
